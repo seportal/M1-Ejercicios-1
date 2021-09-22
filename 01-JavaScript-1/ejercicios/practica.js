@@ -117,7 +117,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num %2 ==1){
+  if (num %2 ===1){
     return true}
   else {
      return false};
@@ -133,25 +133,25 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow (num,3)
+  return Math.pow (num,3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.pow (num,exponent)
+  return Math.pow (num,exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round(num)
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.ceil(num)
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -210,15 +210,15 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado) {
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-   area =lado*lado
-   return perimetro =lado*4; 
+   
+   return lado*4; 
 
 }
 
 function areaDelTriangulo(base, altura) {
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-   return ÁreaDeTriangulo = base * altura /2
+   return base * altura /2
 }
 
 function deEuroAdolar(euro) {
@@ -236,7 +236,16 @@ function esVocal(letra) {
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-}
+
+    if (letra === 'a' || letra === 'e' || letra === 'i'|| letra === 'o'|| letra === 'u') {
+    return 'Es vocal';
+    } else if (letra.length > 1) {
+    return 'Dato incorrecto';
+   } else {
+     return 'Dato incorrecto'; 
+  }
+
+};
 
 // No modificar nada debajo de esta línea
 // --------------------------------
